@@ -35,24 +35,24 @@ const apiKey= "00361bf70d0ddd1afaf09597c7bcf4eb";
             // 7. now to change the main image depending on the weather 
 
             if(data.weather[0].main == "Clouds"){
-                weatherIcon.src = "/assets/cloud12.png";
+                weatherIcon.src = "assets/cloud12.png";
                 document.body.style.backgroundColor = "( hwb(185 54% 33%), #575568)"; // Light Steel Blue
                                            
             }
             else if(data.weather[0].main == "Clear"){ 
-                weatherIcon.src = "/assets/clear_sky.png"; 
+                weatherIcon.src = "assets/clear_sky.png"; 
                 document.querySelector('.card').style.background = "linear-gradient( hwb(181 12% 35%), #e5e5e5)"; // Light Steel Blue gradient           
             }
             else if(data.weather[0].main == "Rain"){
-                weatherIcon.src = "/assets/rain.png"; 
+                weatherIcon.src = "assets/rain.png"; 
                 document.querySelector('.card').style.background = "linear-gradient(hwb(181 12% 35%), #b0c4de)";            
             }
             else if(data.weather[0].main == "Drizzle"){  
-                weatherIcon.src = "/assets/drizzle2.png"; 
+                weatherIcon.src = "assets/drizzle2.png"; 
                 document.querySelector('.card').style.background = "linear-gradient( hwb(186 51% 22%), #908ca3)";            
             }
             else if(data.weather[0].main == "Mist"){   
-                weatherIcon.src = "/assets/mist.png";    
+                weatherIcon.src = "assets/mist.png";    
                 document.querySelector('.card').style.background = "linear-gradient( hwb(186 53% 43%), #dad9df)";         
             }
             document.querySelector(".weather").style.display = "block"; // it will show the weather info 
