@@ -36,12 +36,11 @@ const apiKey= "00361bf70d0ddd1afaf09597c7bcf4eb";
 
             if(data.weather[0].main == "Clouds"){
                 weatherIcon.src = "assets/cloud12.png";
-                document.body.style.backgroundColor = "( hwb(185 54% 33%), #575568)"; // Light Steel Blue
-                                           
+                document.querySelector('.card').style.background = "linear-gradient(hwb(185 54% 33%), #575568)"; 
             }
             else if(data.weather[0].main == "Clear"){ 
                 weatherIcon.src = "assets/clear_sky.png"; 
-                document.querySelector('.card').style.background = "linear-gradient( hwb(181 12% 35%), #e5e5e5)"; // Light Steel Blue gradient           
+                document.querySelector('.card').style.background = "linear-gradient(hwb(181 12% 35%), #e5e5e5)";            
             }
             else if(data.weather[0].main == "Rain"){
                 weatherIcon.src = "assets/rain.png"; 
@@ -49,18 +48,21 @@ const apiKey= "00361bf70d0ddd1afaf09597c7bcf4eb";
             }
             else if(data.weather[0].main == "Drizzle"){  
                 weatherIcon.src = "assets/drizzle2.png"; 
-                document.querySelector('.card').style.background = "linear-gradient( hwb(186 51% 22%), #908ca3)";            
+                document.querySelector('.card').style.background = "linear-gradient(hwb(186 51% 22%), #908ca3)";            
             }
             else if(data.weather[0].main == "Mist"){   
                 weatherIcon.src = "assets/mist.png";    
-                document.querySelector('.card').style.background = "linear-gradient( hwb(186 53% 43%), #dad9df)";         
+                document.querySelector('.card').style.background = "linear-gradient(hwb(186 53% 43%), #dad9df)";         
             }
-            document.querySelector(".weather").style.display = "block"; // it will show the weather info 
-            document.querySelector(".error").style.display="none"; // it will hide the error message 
+            document.querySelector(".weather").style.display = "block"; // Show the weather info
+            document.querySelector(".error").style.display = "none"; // Hide the error message 
              } 
     }
         searchBtn.addEventListener("click",()=>{
             checkWeather(searchBox.value);   // calls the function to console log data to use. 
         }) 
         // 1. added an event listener to the search button variable
-        // 2. when clicked run the asyn function checkWeather using the searchbox value
+        // 2. when clicked run the asyn function check Weather using the searchbox value
+
+        
+        
