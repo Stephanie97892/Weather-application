@@ -7,6 +7,11 @@
 
 body{
     background-color: #ffffff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;         
+    margin: 0;              
     
 }
 
@@ -19,8 +24,21 @@ body{
     border-radius: 20px;
     padding:  40px 35px;
     text-align: center;
-    margin-top: 10px;
+    
 
+}
+
+
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(hwb(185 55% 17%), #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    margin: 0;  /* Remove the margin-top since it's centered */
 }
 
 .search{
