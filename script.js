@@ -36,7 +36,7 @@ const apiKey= "00361bf70d0ddd1afaf09597c7bcf4eb";
 
             if(data.weather[0].main == "Clouds"){
                 weatherIcon.src = "assets/cloud12.png";
-                document.querySelector('.card').style.background = "linear-gradient(hwb(185 54% 33%), #575568)"; 
+                document.querySelector('.card').style.background = "linear-gradient(hwb(180 85% 13%), #79797b)"; 
             }
             else if(data.weather[0].main == "Clear"){ 
                 weatherIcon.src = "assets/clear_sky.png"; 

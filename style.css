@@ -15,30 +15,18 @@ body{
     
 }
 
-.card{
-    width: 90%;
-    max-width: 470px;
-    background: linear-gradient( hwb(185 55% 17%), #5b548a);
-    color: #fff;
-    margin: 100px auto 0 ;
-    border-radius: 20px;
-    padding:  40px 35px;
-    text-align: center;
-    
-
-}
-
 
 
 .card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(hwb(185 55% 17%), #5b548a);
+    background: linear-gradient(hwb(182 44% 19%), #afaeb4); 
     color: #fff;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
     margin: 0;  /* Remove the margin-top since it's centered */
+    border: solid 2px black;
 }
 
 .search{
@@ -54,12 +42,13 @@ body{
     outline: 0;
     background: #ebfffc;
     color: #555;
-    padding: 10px 25px;
-    height:60px ;
+    padding: 10px 10px;
+    height: 50px ;
     border-radius: 30px;
     flex: 1;
     margin-right:16px ;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 800;
 
 }
 
@@ -71,6 +60,7 @@ body{
     height: 60px;
     cursor: pointer;
     border-radius: 50%;
+
 
 }
 
